@@ -103,7 +103,7 @@ myFriends += ["Ian", "Bomi", "Kevin"]
 myFriends.append("Michael")
 
 //4
-myFriends.swapAt(0, 3)
+myFriends.swapAt(0, 2)
 
 //5
 for friend in myFriends {
@@ -202,12 +202,18 @@ if isRaining {
 }
 
 //7
-let jobLevelDic: [Int: String] = [1: "Member", 2: "Team Leader", 3: "Manager", 4: "Director"]
-let jobLevel = 3
+let jobLevel = 5
 
-if let val = jobLevelDic[jobLevel] {
-    print(val)
-} else {
+switch jobLevel {
+case 1:
+    print("Member")
+case 2:
+    print("Team Leader")
+case 3:
+    print("Manager")
+case 4:
+    print("Director")
+default:
     print("We don't have this job.")
 }
 
